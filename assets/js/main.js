@@ -25,7 +25,7 @@ const smoothNavigation = function (e) {
     let offsetMinus = 60;
 
     switch (linkNavHref) {
-        case "#kontak":
+        case "#contacts":
             offsetMinus = 90;
             break;
     }

@@ -1,7 +1,7 @@
 /* responsive */
-@media (max-width: 1100px) {
+@media (max-width: 1280px) {
     .navigation-header {
-        padding: 10px 70px;
+        padding: 10px 40px;
         position: absolute;
         top: 80px;
         left: 0px;
@@ -47,6 +47,7 @@
     }
 
     .jumbotron {
+        padding-top: 70px;
         padding-bottom: 50px;
     }
 
@@ -65,18 +66,53 @@
     }
 
     .about-us-image {
-        width: 100%;
-        height: 500px;
+        display: none;
+    }
+    .about-us-description {
+        padding: 40px 45px 90px 90px;
+    }
+    .about-us-description h2 {
+        font-size: 28px;
+    }
+    .categories-header h2 {
+        font-size: 28px;
+    }
+    .categories-container {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 0px;
     }
 
     .courses {
         padding-bottom: 50px !important;
     }
-
-    .contact-container {
-        flex-direction: column;
-        margin-top: -1px;
+    .courses-header h2 {
+        font-size: 28px;
+    }
+    .courses-container {
+        grid-template-columns: auto auto auto;
         margin-bottom: 0px;
+    }
+    .courses-content .courses-category {
+        padding-left: 15px;
+    }
+    .mentor-header h2 {
+        font-size: 28px;
+    }
+    .testimonal-header h2 {
+        font-size: 28px;
+    }
+    .blog {
+        padding-bottom: 50px !important;
+    }
+    .blog-header h2 {
+        font-size: 28px;
+    }
+    .blog-container {
+        grid-template-columns: auto auto;
+        margin-bottom: 0px;
+    }
+    .blog-content .blog-category {
+        padding-left: 75px;
     }
 
     .footer-content {
@@ -90,9 +126,12 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 999px) {
     .navigation-header {
         padding: 5px;
+    }
+    .header-logo {
+        margin-left: 70px;
     }
 
     header > nav {
@@ -101,8 +140,7 @@
 
     .jumbotron {
         flex-direction: column-reverse;
-        margin-top: 60px;
-        /* padding: 0px 25px 25px; */
+        margin-top: 0px;
         text-align: center;
     }
 
@@ -118,12 +156,45 @@
     }
 
     .illustration > img {
-        width: 200px;
+        width: 300px;
         margin-bottom: 20px;
     }
 
-    .course-item {
-        flex-basis: 60%;
+    .courses {
+        padding-bottom: 50px !important;
+    }
+    .courses-header h2 {
+        font-size: 28px;
+    }
+    .courses-container {
+        grid-template-columns: auto auto;
+        margin-bottom: 0px;
+    }
+    .courses-content .courses-category {
+        padding-left: 35px;
+    }
+    .mentor-header h2 {
+        font-size: 28px;
+    }
+    .testimonal-header h2 {
+        font-size: 28px;
+    }
+    .mentor-container {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 0px;
+    }
+    .blog {
+        padding-bottom: 50px !important;
+    }
+    .blog-header h2 {
+        font-size: 28px;
+    }
+    .blog-container {
+        grid-template-columns: auto auto;
+        margin-bottom: 0px;
+    }
+    .blog-content .blog-category {
+        padding-left: 25px;
     }
 
     .contact-bio {
@@ -135,6 +206,169 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .contacts {
+        padding: 40px 45px 45px 80px;
+    }
+
+    .contact-form,
+    .contact-bio {
+        padding: 0px;
+    }
+
+    .contact-form {
+        margin-bottom: 35px;
+    }
+    .contact-container {
+        flex-direction: column;
+        margin-top: -1px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 758) {
+    .navigation-header {
+        padding: 10px 20px;
+    }
+
+    .header-logo {
+        margin-left: 70px;
+    }
+
+    .jumbotron {
+        margin-top: 10px;
+    }
+
+    .about-us {
+        height: auto;
+    }
+
+    .about-us-image {
+        display: none;
+    }
+    .about-us-description {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .categories {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .categories-header > h2 {
+        font-size: 20px;
+    }
+
+    .button-view-all {
+        font-size: 12px;
+    }
+
+    .categories-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .courses {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .courses-header > h2 {
+        font-size: 20px;
+    }
+
+    .courses-container {
+        grid-template-columns: auto;
+    }
+
+    .mentor {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .mentor-header > h2 {
+        font-size: 20px;
+    }
+
+    .mentor-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .blog {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .blog-header > h2 {
+        font-size: 20px;
+    }
+
+    .blog-container {
+        grid-template-columns: auto auto;
+    }
+
+    .contacts {
+        padding: 40px 45px 45px 45px;
+    }
+
+    .contact-form,
+    .contact-bio {
+        padding: 0px;
+    }
+
+    .contact-form {
+        margin-bottom: 35px;
+    }
+    .table-responsive {
+        width: 90%;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+        padding: 30px;
+    }
+    .social-media,
+    .social-media-group a {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 757px) {
+    .blog-container {
+        grid-template-columns: auto auto;
+    }
+    .blog-content .blog-category {
+        padding-left: 10px;
+    }
+    .section-testimonal {
+        background-position-x: 10rem;
+    }
+    .testimonal-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .mentor-container {
+        grid-template-columns: auto auto;
+    }
+    .courses-container {
+        grid-template-columns: auto;
+    }
+    .courses-content .courses-category {
+        padding-left: 100px;
+    }
+    .blog-container {
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 521px) {
+    .categories-container {
+        grid-template-columns: auto auto;
+    }
+
+    .mentor-container {
+        grid-template-columns: auto;
+    }
+    .testimonal-container {
+        grid-template-columns: auto;
+    }
+}
 @media screen and (max-width: 500px) {
     .navigation-header {
         padding: 10px 20px;
@@ -188,7 +422,7 @@
     }
 
     .courses-content .courses-category {
-        padding-left: 152px;
+        padding-left: 52px;
     }
 
     .mentor {
@@ -227,6 +461,11 @@
     .contact-form {
         margin-bottom: 35px;
     }
+    .contact-container {
+        flex-direction: column;
+        margin-top: -1px;
+        margin-bottom: 0px;
+    }
     .table-responsive {
         width: 90%;
     }
@@ -240,20 +479,168 @@
         width: 20px;
         height: 20px;
     }
+    .testimonal-container {
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .jumbotron {
         margin-top: 100px;
     }
+    .illustration > img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .categories-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .courses-container {
+        grid-template-columns: auto;
+    }
+    .courses-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .courses-content {
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .author {
+        margin-left: 13px;
+    }
+    .courses-content .courses-category {
+        padding-left: 60px;
+        margin-top: 10px;
+    }
+    .courses-content h4 a {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .courses-content .courses-description {
+        margin-left: 13px;
+        margin-right: 13px;
+        margin-bottom: 20px;
+    }
+
+    .mentor-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 80px;
+    }
+    .blog-container {
+        grid-template-columns: auto;
+    }
+    .blog-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .blog-content {
         padding: 0px;
+        margin-top: 20px;
+    }
+    .author {
+        margin-left: 13px;
+    }
+    .blog-content .blog-category {
+        padding-left: 60px;
+        margin-top: 10px;
+    }
+    .blog-content h4 a {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .blog-content .blog-description {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    .blog-content .button {
+        margin-bottom: 20px;
+    }
+    input.btn-primary {
+        margin-bottom: 10px;
+    }
+    .testimonal-container {
+        grid-template-columns: auto;
     }
 }
 
 @media screen and (max-width: 350px) {
     .jumbotron {
-        margin-top: 220px;
+        margin-top: 20px;
+    }
+    .illustration > img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .text-jumbotron h1 {
+        font-size: 26px;
+    }
+
+    .about-us-description h2 {
+        font-size: 18px;
+        margin-bottom: -15px;
+    }
+
+    .about-us-description p {
+        font-size: 14px;
+    }
+    .categories-header h2 {
+        font-size: 18px;
+    }
+    .categories-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .courses-header h2 {
+        font-size: 18px;
+    }
+    .courses-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 90px;
+    }
+    .courses-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .courses-content .courses-category a {
+        padding: 5px 5px;
+    }
+    .courses-content .courses-category {
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+    .mentor-header a {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100px;
+    }
+
+    .blog-header h2 {
+        font-size: 18px;
+    }
+    .blog-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .blog-content .blog-category a {
+        padding: 5px 5px;
+    }
+    .blog-content .blog-category {
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+    .blog-item > a > img {
+        height: 180px;
+    }
+    input.btn-primary {
+        margin-bottom: 10px;
+    }
+
+    .testimonal-container {
+        grid-template-columns: auto;
     }
 }
 
