@@ -185,7 +185,6 @@ nav > .navigation-header {
 
 .about-us-image {
     flex-basis: 40%;
-    /* background-image: url("../images/aboutus.svg"); */
     background-repeat: no-repeat;
     margin: 90px;
     height: 100%;
