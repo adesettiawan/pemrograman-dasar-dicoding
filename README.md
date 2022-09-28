@@ -1,3 +1,3 @@
 # Learn Everyday
 
-Submission Belajar Dasar Pemrograman Web --- Dicoding
+Submission Belajar Dasar Pemrograman Web - Dicoding
